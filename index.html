@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">SITE</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a>Page One</a></li>
+            <li><a>Page Two</a></li>
+            <li><a>Page Three</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section>
+          <div class="container">
+            <form id="formList">
+              <div class="row">
+                  <div class="form-group col-sm-12">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" placeholder="Nome" id="nome" name="nome" required>
+                  </div>
+                  <div class="form-group col-sm-4">
+                    <label for="peso">Peso:</label>
+                    <input type="number" step="0.01" class="form-control" placeholder="Peso" id="peso" name="peso">
+                  </div>
+                  <div class="form-group col-sm-4">
+                    <label for="altura">Altura:</label>
+                    <input type="number" class="form-control" placeholder="Altura" id="altura" name="altura" required>
+                  </div>
+                  <div class="form-group col-sm-4">
+                    <label for="gorCorp">Gordura Corporal:</label>
+                    <input type="text" class="form-control" placeholder="gorCorp" id="gorCorp" name="gorCorp" required>
+                  </div>
+                  <div class="col-sm-2"></div>
+                  <div class="form-group  col-sm-8" >
+                      <button class="btn btn-success form-control" id="botao" name="botao" type="submit">Salvar</button>
+                  </div>
+              </div>
+            </form>
+          </div>
+  </section>
+    <hr>
+           <div class="container">
+            <div class="tituloTbl">
+                <hr />
+                <h1 class="h1Titulo">Nutrição</h1>
+                <hr />
+            </div>
+            <table class="table table-striped tableNutri">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Peso(Kg)</th>
+                        <th>Altura(M)</th>
+                        <th>Gordura Corporal(%)</th>
+                        <th>IMC</th>
+                    </tr>
+                </thead>
+
+                <tbody id="conteudo">
+                     
+                </tbody>
+            </table>
+        </div>
+  </body>
+  <footer>
+    <script src="./js/imc.js"></script>
+    <script src="./js/form.js"></script>
+  </footer>
+</html>

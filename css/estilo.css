@@ -1,0 +1,21 @@
+.h1Titulo{
+    text-align:center !important;
+}
+
+.tituloTbl{
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 20px;
+    color:azure;
+    background-color: rgb(51, 51, 51);
+}
+
+.paciente-invalido{
+    color: red;
+}
+
+#botao{
+    margin-top: 25px !important; 
+    
+}
+
