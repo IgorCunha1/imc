@@ -54,8 +54,8 @@
                     <label for="gorCorp">Gordura Corporal:</label>
                     <input type="text" class="form-control" placeholder="gorCorp" id="gorCorp" name="gorCorp" required>
                   </div>
-                  <div class="col-sm-2"></div>
-                  <div class="form-group  col-sm-8" >
+                 <div class="col-sm-2"></div>
+                  <div class="form-group   col-sm-8" >
                       <button class="btn btn-success form-control" id="botao" name="botao" type="submit">Salvar</button>
                   </div>
               </div>
@@ -63,32 +63,41 @@
           </div>
   </section>
     <hr>
-           <div class="container">
-            <div class="tituloTbl">
-                <hr />
-                <h1 class="h1Titulo">Nutrição</h1>
-                <hr />
-            </div>
-            <table class="table table-striped tableNutri">
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Peso(Kg)</th>
-                        <th>Altura(M)</th>
-                        <th>Gordura Corporal(%)</th>
-                        <th>IMC</th>
-                    </tr>
-                </thead>
-
-                <tbody id="conteudo">
-                     
-                </tbody>
-            </table>
-        </div>
+        <section class="container">
+                <div class="tituloTbl">
+                    <hr />
+                    <h1 class="h1Titulo">Nutrição</h1>
+                    <hr />
+                </div>
+                <table class="table table-striped tableNutri">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Peso(Kg)</th>
+                            <th>Altura(M)</th>
+                            <th>Gordura Corporal(%)</th>
+                            <th>IMC</th>
+                        </tr>
+                    </thead>
+                    <tbody id="conteudo">
+                        <tr class="paciente">
+                          <td class="info-nome">Igor</td>
+                          <td class="info-peso">1</td>
+                          <td class="info-altura">1</td>
+                          <td class="info-gorCorp">1</td>
+                          <td class="info-imc">1.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </section>
   </body>
+  
   <footer>
+    
     <script src="./js/imc.js"></script>
     <script src="./js/validacoes.js"></script>
     <script src="./js/form.js"></script>
+    <script src="./js/remover-paciente.js"></script>
+    
   </footer>
 </html>

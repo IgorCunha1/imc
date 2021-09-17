@@ -30,19 +30,21 @@ var tabela = document.querySelector("#conteudo");
     }
 
     function montaTr(paciente){
-        var pacienteTr = document.createElement("tr");
+        var pacienteTr = document.createElement("tr");        
         pacienteTr.classList.add("paciente");
-
+      
         pacienteTr.appendChild(montaTd(paciente.nome, "info-nome"));
         pacienteTr.appendChild(montaTd(paciente.peso, "info-peso"));
         pacienteTr.appendChild(montaTd(paciente.altura, "info-altura"));
         pacienteTr.appendChild(montaTd(paciente.gorCorp, "info-gorCorp"));
+        
         if(paciente.imc == false){
             pacienteTr.appendChild(montaTd("Dados Inválidos", "info-imc"));
             pacienteTr.classList.add("paciente-invalido");
         }else{
              pacienteTr.appendChild(montaTd(paciente.imc, "info-imc"));
         }
+        
         return pacienteTr;
         
     }
