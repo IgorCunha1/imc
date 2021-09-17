@@ -14,8 +14,20 @@
     color: red;
 }
 
+.menu{
+    width: auto;
+}
+
 #botao{
     margin-top: 25px !important; 
+    
+}
+
+#logo{
+    align-items: center !important;
+    width: 80px;
+    padding-left:30px ;
+    padding-bottom: 50px;
     
 }
 

@@ -5,12 +5,11 @@ var tabela = document.querySelector("#conteudo");
 
     botao.addEventListener('click', function(event){
         event.preventDefault();
-        
+        var paciente = extrairForm(form);
         
        if(!paciente.nome || !paciente.peso || !paciente.altura || !paciente.gorCorp){
            alert('Digite Todos os Campos!');
        }else{
-        var paciente = extrairForm(form);
         var pacienteTr = montaTr(paciente);
         tabela.appendChild(pacienteTr);
        }
@@ -38,8 +37,12 @@ var tabela = document.querySelector("#conteudo");
         pacienteTr.appendChild(montaTd(paciente.peso, "info-peso"));
         pacienteTr.appendChild(montaTd(paciente.altura, "info-altura"));
         pacienteTr.appendChild(montaTd(paciente.gorCorp, "info-gorCorp"));
-        pacienteTr.appendChild(montaTd(paciente.imc, "info-imc"));
-        
+        if(paciente.imc == false){
+            pacienteTr.appendChild(montaTd("Dados Inválidos", "info-imc"));
+            pacienteTr.classList.add("paciente-invalido");
+        }else{
+             pacienteTr.appendChild(montaTd(paciente.imc, "info-imc"));
+        }
         return pacienteTr;
         
     }
